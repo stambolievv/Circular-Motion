@@ -1,0 +1,29 @@
+{
+  "name": "circular-motion",
+  "version": "1.0.0",
+  "description": "Showcase of circular motion effect!",
+  "main": "index.html",
+  "private": true,
+  "scripts": {},
+  "author": "Deyan 'stambolievv' Stamboliev",
+  "license": "Apache-2.0",
+  "keywords": [
+    "javascript",
+    "circular",
+    "motion",
+    "canvas",
+    "html5-canvas"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stambolievv/Circular-Motion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stambolievv/Circular-Motion/issues"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.3.3"
+  }
+}
