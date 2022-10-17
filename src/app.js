@@ -32,7 +32,7 @@ const particles = array(config.particle.amount, () => {
     particle.draw(ctx);
     particle.update(mouse);
   });
-})(0)
+})(0);
 
 canvas.addEventListener('pointermove', event => {
   const screen = canvas.getBoundingClientRect();
