@@ -66,7 +66,7 @@ export function getRandomValue(value1, value2, chanceForValue1 = 0.5) {
  * clampBetweenRanges(100, [50, 150], [0, 2]) -> 1
  */
 export function clampBetweenRanges(value, valueRange, newRange) {
-  return (((value - valueRange[0]) / (valueRange[1] - valueRange[0])) * (newRange[1] - newRange[0])) + newRange[0];
+  return ((value - valueRange[0]) / (valueRange[1] - valueRange[0])) * (newRange[1] - newRange[0]) + newRange[0];
 }
 
 /**

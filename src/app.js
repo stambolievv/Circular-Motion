@@ -22,10 +22,10 @@ const particles = array(config.particle.amount, () => {
   return new Particle(configuration);
 });
 
-(function animate() {
+(function animate(timestamp) {
   window.requestAnimationFrame(animate);
   /* Creating the trial effect by setting the background color of the canvas with an alpha value.*/
-  ctx.fillStyle = `${config.scene.color}${parseInt(config.scene.alpha,10).toString(16)}`;
+  ctx.fillStyle = `${config.scene.color}${parseInt(config.scene.alpha, 10).toString(16)}`;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   particles.forEach(particle => {
@@ -36,8 +36,8 @@ const particles = array(config.particle.amount, () => {
 
 canvas.addEventListener('pointermove', event => {
   const screen = canvas.getBoundingClientRect();
-  mouse.x = (event.clientX - screen.left) / (screen.right - screen.left) * canvas.width;
-  mouse.y = (event.clientY - screen.top) / (screen.bottom - screen.top) * canvas.height;
+  mouse.x = ((event.clientX - screen.left) / (screen.right - screen.left)) * canvas.width;
+  mouse.y = ((event.clientY - screen.top) / (screen.bottom - screen.top)) * canvas.height;
 });
 canvas.addEventListener('pointerout', event => {
   mouse.x = undefined;

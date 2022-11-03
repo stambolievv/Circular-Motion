@@ -2,10 +2,7 @@ import Vector2D from '../utils/Vector2D.js';
 import { getRandomFloat, getRandomInt } from '../utils/misc.js';
 
 export default class Particle {
-  constructor({
-    position,
-    config = {}
-  } = {}) {
+  constructor({ position, config = {} } = {}) {
     this.factor = getRandomInt(config.factor.inner, config.factor.outer);
 
     this.position = new Vector2D(position);
